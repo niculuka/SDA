@@ -40,11 +40,16 @@ import java.util.Scanner;
  * 17.  Cititi numele utilizatorului de la tastatura
  *      Oferiti posibilitate de corectare multipla a numelui!
  *
- * 18.  Deschideti un cont bancar cu soldul initial 0!
- *      Depozitati o suma de bani si calculati dobanda la acea suma!
+ * 18.  Dati un array cu cateva numere diferite!
+ *      Calculati cel mai mic si cel mai mare numar!
  *
- * 19.  Se da un cont bancar cu soldul 100!
- *      Calculati dobanda + soldul!
+ * 19.  Calculati factorialul unui numar!
+ *
+ * 20.  Multiplicati un string cu un numar dat!
+ *
+ * 21.  Verificati daca un numar apartine unui array!
+ *
+ * 22.  Gasiti numerele pare si impare ale unui arrey!
  */
 
 public class Test {
@@ -193,13 +198,86 @@ public class Test {
         }
     }
     public void Test18() {
-
+        int[] numbers = {1, 53, 2, 5, 8, 9, 331, 0};
+        theSmallestNumber(numbers);
+        theBiggestNumber(numbers);
     }
-
-
-
-
-
+    public void theSmallestNumber( int[] arrayNumber ) {
+        int smallestNumber = arrayNumber[0];
+        for (int index = 0; index < arrayNumber.length; index++) {
+            if (arrayNumber[index] < smallestNumber) {
+                smallestNumber = arrayNumber[index];
+            }
+        }
+        System.out.println("The smallest number is: " + smallestNumber);
+    }
+    public void theBiggestNumber( int[] arrayNumber ) {
+        int biggestNumber = arrayNumber[0];
+        for (int index = 0; index < arrayNumber.length; index++) {
+            if (arrayNumber[index] > biggestNumber) {
+                biggestNumber = arrayNumber[index];
+            }
+        }
+        System.out.println("The biggest number is: " + biggestNumber);
+    }
+    public void Test19() {
+        int fact = calcFact(4);
+        System.out.println("The factorial is: " + fact);
+    }
+    public static int calcFact(int number) {
+        int fact = 1;
+        for (int index = 1; index <= number; index++) {
+            fact = fact * index;
+        }
+        return fact;
+    }
+    public void Test20() {
+        multiplyString("A", 3);
+    }
+    public static void multiplyString(String text, int timesString) {
+        String sumText = "";
+        for (int index = 0; index < timesString; index ++) {
+            sumText = sumText + text;
+        }
+        System.out.println(sumText);
+    }
+    public void Test21() {
+        int[] numbers = {11, 22, 33, 44};
+        isNumberPartOfArray(44, numbers);
+    }
+    public static void isNumberPartOfArray(int number, int[] numbersOfArray) {
+        boolean foundNumber = false;
+        for (int index = 0; index < numbersOfArray.length; index++) {
+            if (number == numbersOfArray[index]) {
+                foundNumber = true;
+            }
+        }
+        if(foundNumber) {
+            System.out.println("EXIST");
+        }
+        else{
+            System.out.println("NOT FOUND");
+        }
+    }
+    public void Test22() {
+        int[] numbers = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+        showEvenNumbers(numbers);
+        showOddsNumber(numbers);
+    }
+    public static void showEvenNumbers(int[] arrayNumbers) {
+        for (int index = 0; index < arrayNumbers.length; index++) {
+            if (arrayNumbers[index]%2 == 0) {
+                System.out.println("Numerele pare sunt: " + arrayNumbers[index]);
+            }
+        }
+    }
+    public static void  showOddsNumber(int[] numberArray) {
+        for(int index = 0; index < numberArray.length; index++) {
+            if(numberArray[index]%2 != 0) {
+                System.out.println("Numerele impare sunt: " + numberArray[index]);
+            }
+        }
+    }
 
 
 }
