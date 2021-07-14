@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         Account account = new Account(500);
         System.out.println(account);
-        account.writeToFile("sold.txt");
+        account.writeToFile("sold100.txt");
     }
 
 }

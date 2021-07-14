@@ -1,4 +1,4 @@
-package com.advance.adv4.model;
+package com.advance.adv4_generics.model;
 
 public class Person implements Identifiable {
     private String CNP;

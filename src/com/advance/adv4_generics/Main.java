@@ -1,7 +1,7 @@
-package com.advance.adv4;
+package com.advance.adv4_generics;
 
-import com.advance.adv4.model.Person;
-import com.advance.adv4.reposytory.IdentifiableRepository;
+import com.advance.adv4_generics.model.Person;
+import com.advance.adv4_generics.reposytory.IdentifiableRepository;
 
 /**     Create the Identifiable interface with the fallowing method:
  - getId: String

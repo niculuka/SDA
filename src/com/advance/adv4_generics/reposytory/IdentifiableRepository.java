@@ -1,6 +1,6 @@
-package com.advance.adv4.reposytory;
+package com.advance.adv4_generics.reposytory;
 
-import com.advance.adv4.model.Identifiable;
+import com.advance.adv4_generics.model.Identifiable;
 
 import java.util.ArrayList;
 import java.util.List;
