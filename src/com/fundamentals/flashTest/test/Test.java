@@ -1,91 +1,48 @@
 package com.fundamentals.flashTest.test;
 import java.util.Scanner;
 
-/** 1.  Faceti un array cu 5 elemente !
- *      Printati al 3-lea element !
- *
- * 2.   Faceti un array cu 7 elemente.
- *      Extrageti random cate un element si afisati-l !
- *
- * 3.   Cititi si afisati un text de la tastatura!
- *
- * 4.   Cititi si afisati un numar de la tastatura!
- *
- * 5.   Transformati un string in integer!
- *
- * 6.   Transformati un integer in string!
- *
- * 7.   Numarati cate caractere are un cuvant!
- *
- * 8.   Afisati litera 2 si 4, impreuna si separat!
- *
- * 9.   Inlocuiti caracterele unui string cu *!
- *
- * 10.  Inlocuiti caracterul 1 si 4 al unui string, cu -!
- *
- * 11.  Afisati un string pe litere!
- *
- * 12.  Dati un string si alegeti o litera din string!
- *      Daca stringul contine litera, inlocuiti litera cu un semn, altfel afisati un mesaj de eroare
- *
- * 13.  Dati un string cu minim 10 litere!
- *      Cautati vocalele "a, e, i, o, u" in string si afisatile!
- *
- * 14.  Definit o matrice goala cu 3 linii si 3 coloanee, cu elementul din mijloc cu valuarea 1;
- *
- * 15.  Definiti o matrice goala, cu 2 randuri si 4 coloane.
- *
- * 16.  Definiti o matrice cu 3 linii, 3 coloane, cu numerele in ordine crescatoare, date de un counter!
- *
- * 17.  Cititi numele utilizatorului de la tastatura
- *      Oferiti posibilitate de corectare multipla a numelui!
- *
- * 18.  Dati un array cu cateva numere diferite!
- *      Calculati cel mai mic si cel mai mare numar!
- *
- * 19.  Calculati factorialul unui numar!
- *
- * 20.  Multiplicati un string cu un numar dat!
- *
- * 21.  Verificati daca un numar apartine unui array!
- *
- * 22.  Gasiti numerele pare si impare ale unui arrey!
- */
 
 public class Test {
-    public static void Test1() {
+    //------------------------------------------------------------------------------------------------------------------
+    public void Test1() {
         String[] fruit = {"banana", "apple", "strawberry", "cherry", "apricot"};
         System.out.println("Third element: " + "\n" + fruit[2]);
     }
-    public static void Test2() {
+    //------------------------------------------------------------------------------------------------------------------
+    public void Test2() {
         String[] word = {"book", "pencil", "letter", "handsome", "cooperation", "train", "laptop"};
         int random = (int) (Math.random() * word.length);
         String getWord = word[random];
         System.out.println(getWord);
     }
-    public static void Test3() {
+    //------------------------------------------------------------------------------------------------------------------
+    public void Test3() {
         Scanner scanner = new Scanner(System.in).useDelimiter("\\n");
         System.out.println("Insert a text: ");
         String string = scanner.next();
         System.out.println(string);
     }
-    public static void Test4() {
+    //------------------------------------------------------------------------------------------------------------------
+    public void Test4() {
         Scanner scanner = new Scanner(System.in).useDelimiter("\\n");
         System.out.println("Insert a number: ");
         int number = scanner.nextInt();
         System.out.println(number);
     }
-    public static void Test5() {
+    //------------------------------------------------------------------------------------------------------------------
+    public void Test5() {
         String string = "1234";
         int number = Integer.parseInt(string);
         System.out.println(number);
     }
-    public static void Test6() {
+    //------------------------------------------------------------------------------------------------------------------
+    public void Test6() {
         int number = 520;
         String string = String.valueOf(number);
         System.out.println(string);
     }
-    public static void Test7() {
+    //------------------------------------------------------------------------------------------------------------------
+    public void Test7() {
         int countChar = 0;
         String string = "keyword";
         for (int i = 0; i <string.length(); i++) {
@@ -93,13 +50,15 @@ public class Test {
         }
         System.out.println(countChar);
     }
-    public static void Test8() {
+    //------------------------------------------------------------------------------------------------------------------
+    public void Test8() {
         String string = "characters";
         System.out.println(string.charAt(1));
         System.out.println(string.charAt(3));
         System.out.println(string.charAt(1) + " " + string.charAt(3));
     }
-    public static void Test9() {
+    //------------------------------------------------------------------------------------------------------------------
+    public void Test9() {
         String string = "bicycle";
         char[] ch = new char[string.length()];
 
@@ -108,20 +67,23 @@ public class Test {
         }
         System.out.println(ch);
     }
-    public static void Test10() {
+    //------------------------------------------------------------------------------------------------------------------
+    public void Test10() {
         String string = "String";
         string = string.replace(string.charAt(0), '-');
         string = string.replace(string.charAt(3), '-');
         System.out.println(string);
     }
-    public static void Test11() {
+    //------------------------------------------------------------------------------------------------------------------
+    public void Test11() {
 
         String string = "elephant";
         for (int i = 0; i < string.length(); i++) {
             System.out.println(string.charAt(i));
         }
     }
-    public static void Test12() {
+    //------------------------------------------------------------------------------------------------------------------
+    public void Test12() {
         String string = "Capture";
         char ch = 'a';
         if (string.contains(String.valueOf(ch))) {
@@ -131,7 +93,8 @@ public class Test {
             System.out.println("Character not found");
         }
     }
-    public static void Test13() {
+    //------------------------------------------------------------------------------------------------------------------
+    public void Test13() {
         String string = "Helicopter";
         char[] ch = {'a', 'e', 'i', 'o', 'u'};
         for (int i = 0; i < string.length(); i++) {
@@ -142,7 +105,8 @@ public class Test {
             }
         }
     }
-    public static void Test14() {
+    //------------------------------------------------------------------------------------------------------------------
+    public void Test14() {
         String[][] board = new String[3][3];
         for(int i=0; i< board.length; i++){
             for(int j=0; j < board.length; j++){
@@ -153,7 +117,8 @@ public class Test {
             System.out.println();
         }
     }
-    public static void Test15() {
+    //------------------------------------------------------------------------------------------------------------------
+    public void Test15() {
         int row = 2;
         int col = 4;
         String[][] board = new String[row][col];
@@ -165,7 +130,8 @@ public class Test {
             System.out.println();
         }
     }
-    public static void Test16() {
+    //------------------------------------------------------------------------------------------------------------------
+    public void Test16() {
         int counter = 1;
         int[][] matrix = new int[3][3];
         for(int i=0; i< 3; i++){
@@ -176,7 +142,8 @@ public class Test {
             System.out.println();
         }
     }
-    public static void Test17() {
+    //------------------------------------------------------------------------------------------------------------------
+    public void Test17() {
         Scanner scanner = new Scanner(System.in).useDelimiter("\\n");
         System.out.println("Introduceti numele dvs!");
         while (true) {
@@ -197,55 +164,57 @@ public class Test {
             }
         }
     }
+    //------------------------------------------------------------------------------------------------------------------
     public void Test18() {
         int[] numbers = {1, 53, 2, 5, 8, 9, 331, 0};
-        theSmallestNumber(numbers);
-        theBiggestNumber(numbers);
-    }
-    public void theSmallestNumber( int[] arrayNumber ) {
-        int smallestNumber = arrayNumber[0];
-        for (int index = 0; index < arrayNumber.length; index++) {
-            if (arrayNumber[index] < smallestNumber) {
-                smallestNumber = arrayNumber[index];
+        int smallestNumber = numbers[0];
+        for (int index = 0; index < numbers.length; index++) {
+            if (numbers[index] < smallestNumber) {
+                smallestNumber = numbers[index];
             }
         }
         System.out.println("The smallest number is: " + smallestNumber);
     }
-    public void theBiggestNumber( int[] arrayNumber ) {
-        int biggestNumber = arrayNumber[0];
-        for (int index = 0; index < arrayNumber.length; index++) {
-            if (arrayNumber[index] > biggestNumber) {
-                biggestNumber = arrayNumber[index];
+    //------------------------------------------------------------------------------------------------------------------
+    public void Test19() {
+        int[] numbers = {1, 53, 2, 5, 8, 9, 331, 0};
+        int biggestNumber = numbers[0];
+        for (int index = 0; index < numbers.length; index++) {
+            if (numbers[index] > biggestNumber) {
+                biggestNumber = numbers[index];
             }
         }
         System.out.println("The biggest number is: " + biggestNumber);
     }
-    public void Test19() {
+    //------------------------------------------------------------------------------------------------------------------
+    public void Test20() {
         int fact = calcFact(4);
         System.out.println("The factorial is: " + fact);
     }
-    public static int calcFact(int number) {
+    public int calcFact(int number) {
         int fact = 1;
         for (int index = 1; index <= number; index++) {
             fact = fact * index;
         }
         return fact;
     }
-    public void Test20() {
+    //------------------------------------------------------------------------------------------------------------------
+    public void Test21() {
         multiplyString("A", 3);
     }
-    public static void multiplyString(String text, int timesString) {
+    public void multiplyString(String text, int timesString) {
         String sumText = "";
         for (int index = 0; index < timesString; index ++) {
             sumText = sumText + text;
         }
         System.out.println(sumText);
     }
-    public void Test21() {
+    //------------------------------------------------------------------------------------------------------------------
+    public void Test22() {
         int[] numbers = {11, 22, 33, 44};
         isNumberPartOfArray(44, numbers);
     }
-    public static void isNumberPartOfArray(int number, int[] numbersOfArray) {
+    public void isNumberPartOfArray(int number, int[] numbersOfArray) {
         boolean foundNumber = false;
         for (int index = 0; index < numbersOfArray.length; index++) {
             if (number == numbersOfArray[index]) {
@@ -259,22 +228,21 @@ public class Test {
             System.out.println("NOT FOUND");
         }
     }
-    public void Test22() {
+    //------------------------------------------------------------------------------------------------------------------
+    public void Test23() {
         int[] numbers = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-        showEvenNumbers(numbers);
-        showOddsNumber(numbers);
-    }
-    public static void showEvenNumbers(int[] arrayNumbers) {
-        for (int index = 0; index < arrayNumbers.length; index++) {
-            if (arrayNumbers[index]%2 == 0) {
-                System.out.println("Numerele pare sunt: " + arrayNumbers[index]);
+        for (int index = 0; index < numbers.length; index++) {
+            if (numbers[index]%2 == 0) {
+                System.out.println("Even numbers: " + numbers[index]);
             }
         }
     }
-    public static void  showOddsNumber(int[] numberArray) {
-        for(int index = 0; index < numberArray.length; index++) {
-            if(numberArray[index]%2 != 0) {
-                System.out.println("Numerele impare sunt: " + numberArray[index]);
+    //------------------------------------------------------------------------------------------------------------------
+    public void Test24() {
+        int[] numbers = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+        for(int index = 0; index < numbers.length; index++) {
+            if(numbers[index]%2 != 0) {
+                System.out.println("Odd numbers: " + numbers[index]);
             }
         }
     }
