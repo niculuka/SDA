@@ -1,4 +1,4 @@
-package com.advance.adv5_Collections.map.ex1;
+package com.advance.adv5_Collections_Path.map.ex1;
 
 import java.util.HashMap;
 import java.util.Map;

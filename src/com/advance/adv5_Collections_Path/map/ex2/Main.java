@@ -1,4 +1,4 @@
-package com.advance.adv5_Collections.map.ex2;
+package com.advance.adv5_Collections_Path.map.ex2;
 import java.util.*;
 
 /**

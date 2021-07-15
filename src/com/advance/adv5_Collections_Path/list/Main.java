@@ -1,4 +1,4 @@
-package com.advance.adv5_Collections.list;
+package com.advance.adv5_Collections_Path.list;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.advance.adv5_Path;
+package com.advance.adv5_Collections_Path.path;
 
 import java.io.IOException;
 import java.nio.file.Files;

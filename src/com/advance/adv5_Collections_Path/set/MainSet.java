@@ -1,4 +1,4 @@
-package com.advance.adv5_Collections.set;
+package com.advance.adv5_Collections_Path.set;
 
 import java.util.HashSet;
 import java.util.Scanner;
