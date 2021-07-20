@@ -1,4 +1,4 @@
-package com.advance.adv6_Concur_Thread.concurancy;
+package com.advance.adv6_Concur_Thread.concurancy.ex1;
 
 import java.util.ArrayList;
 import java.util.List;
