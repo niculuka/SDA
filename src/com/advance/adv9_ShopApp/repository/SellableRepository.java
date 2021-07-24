@@ -1,6 +1,5 @@
 package com.advance.adv9_ShopApp.repository;
 import com.advance.adv9_ShopApp.model.Sellable;
-
 import java.util.Optional;
 
 public interface SellableRepository<T extends Sellable> {
