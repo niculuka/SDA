@@ -75,4 +75,15 @@ public class GroceryProduct extends FoodProduct {
     public void setDescription(String description) {
         this.description = description;
     }
+
+    @Override
+    public String toString() {
+        return "GroceryProduct{" +
+                "id='" + id + '\'' +
+                ", price=" + price +
+                ", currency='" + currency + '\'' +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                '}';
+    }
 }

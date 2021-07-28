@@ -1,9 +1,14 @@
 package com.advance.adv9_ShopApp;
+import com.advance.adv9_ShopApp.repository.GroceryProductRepository;
+import com.advance.adv9_ShopApp.repository.GroceryProductRepositoryImpl;
+
+import java.io.IOException;
 
 
 public class Main {
-    public static void main(String[] args) {
-
+    public static void main(String[] args) throws IOException {
+        GroceryProductRepository groceryProductRepository = new GroceryProductRepositoryImpl();
+        System.out.println(groceryProductRepository.findByName("Snapple - Mango Maddness"));
     }
 }
 
