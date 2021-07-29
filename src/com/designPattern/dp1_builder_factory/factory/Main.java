@@ -1,4 +1,4 @@
-package com.designPattern.dP1.factory;
+package com.designPattern.dp1_builder_factory.factory;
 
 public class Main {
     public static void main(String[] args) {

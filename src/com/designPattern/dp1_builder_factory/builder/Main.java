@@ -1,4 +1,4 @@
-package com.designPattern.dP1.builder;
+package com.designPattern.dp1_builder_factory.builder;
 
 import java.util.Date;
 
