@@ -97,4 +97,16 @@ public class Car {
     public int hashCode() {
         return Objects.hash(name, model, price, yearOfManufacture, manufacturers, engineType);
     }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "name='" + name + '\'' +
+                ", model='" + model + '\'' +
+                ", price=" + price +
+                ", yearOfManufacture=" + yearOfManufacture +
+                ", manufacturers=" + manufacturers +
+                ", engineType=" + engineType +
+                '}';
+    }
 }

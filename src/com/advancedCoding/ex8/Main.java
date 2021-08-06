@@ -16,10 +16,11 @@ package com.advancedCoding.ex8;
 public class Main {
     public static void main(String[] args) {
         Validator<Parcel> parcelValidator = new ParcelValidator();
-        Parcel parcel1 = new Parcel(35, 35, 35, 10, true);
-        Parcel parcel2 = new Parcel(100,100,100,25,false);
-        Parcel parcel3 = new Parcel(100,100,10,25,false);
-        Parcel parcel4 = new Parcel(100, 40, 100, 20, true);
+        Parcel parcel1 = new Parcel(20, 20, 20, 10, true);
+        Parcel parcel2 = new Parcel(40,20,20,10,true);
+        Parcel parcel3 = new Parcel(20,20,20,20,true);
+        Parcel parcel4 = new Parcel(20, 20, 20, 40, true);
+        Parcel parcel5 = new Parcel(20, 20, 20, 40, false);
 
         parcelValidator.validate(parcel1);
         System.out.println("===========================");
@@ -31,6 +32,9 @@ public class Main {
         System.out.println("===========================");
 
         parcelValidator.validate(parcel4);
+        System.out.println("===========================");
+
+        parcelValidator.validate(parcel5);
         System.out.println("===========================");
     }
 }

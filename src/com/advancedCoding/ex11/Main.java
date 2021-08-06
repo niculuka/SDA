@@ -13,23 +13,23 @@ public class Main {
         Point2D point2 = new Point2D(15, 35);
 
         Circle circle = new Circle(point1, point2);
-        System.out.println(circle.getRadius());
-        System.out.println(circle.getPerimeter());
-        System.out.println(circle.getArea());
-        System.out.println("=======================");
+        System.out.println("Radius = " + circle.getRadius());
+        System.out.println("Perimeter = " + circle.getPerimeter());
+        System.out.println("Area = " + circle.getArea());
+        System.out.println("==========================================");
 
         MoveDirection moveDirection = new MoveDirection(2, 6);
         point2.move(moveDirection);
-        System.out.println(circle.getRadius());
-        System.out.println(circle.getPerimeter());
-        System.out.println(circle.getArea());
-        System.out.println("=======================");
+        System.out.println("Radius = " + circle.getRadius());
+        System.out.println("Perimeter = " + circle.getPerimeter());
+        System.out.println("Area = " + circle.getArea());
+        System.out.println("==========================================");
 
         circle.resize(2);
-        System.out.println(circle.getRadius());
-        System.out.println(circle.getPerimeter());
-        System.out.println(circle.getArea());
-        System.out.println("=======================");
+        System.out.println("Radius = " + circle.getRadius());
+        System.out.println("Perimeter = " + circle.getPerimeter());
+        System.out.println("Area = " + circle.getArea());
+        System.out.println("==========================================");
 
     }
 }
