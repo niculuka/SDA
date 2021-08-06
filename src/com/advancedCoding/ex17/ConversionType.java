@@ -1,14 +1,14 @@
 package com.advancedCoding.ex17;
 
 public enum ConversionType {
-    METERS_TO_YARDS(new MetersToYardsConverter()),
-    YARDS_TO_METERS(yards -> yards * 0.914),
-    CENTIMETERS_TO_INCHES(centimeter -> centimeter * 2.5),
-    INCHES_TO_CENTIMETERS(inch -> inch * 0.3),
-    KILOMETERS_TO_MILES(kilometer -> kilometer * 1.6),
-    MILES_TO_KILOMETERS(mile -> mile * 0.7);
+    METERS_TO_YARDS(meter -> meter * 1.093),
+    YARDS_TO_METERS(yards -> yards * 0.9144),
+    CENTIMETERS_TO_INCHES(centimeter -> centimeter * 0.39),
+    INCHES_TO_CENTIMETERS(inch -> inch * 2.54),
+    KILOMETERS_TO_MILES(kilometer -> kilometer * 0.62),
+    MILES_TO_KILOMETERS(mile -> mile * 1.6);
 
-    private Converter converter;
+    private final Converter converter;
 
     ConversionType(Converter converter) {
         this.converter = converter;
