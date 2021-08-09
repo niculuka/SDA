@@ -2,7 +2,6 @@ package com.advancedCoding.ex19;
 
 import java.util.HashMap;
 import java.util.Map;
-
 /**
  * Create a Computer class with fields defining computer features: processor, ram, graphics card, company and model.
  * Implement setters, getters, constructor with all fields, toString(), equals() and hashcode() methods.
