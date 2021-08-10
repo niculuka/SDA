@@ -25,5 +25,6 @@ public class Main {
         System.out.println(zoo.getNumberOfAllAnimals());
         System.out.println(zoo.getAnimalsCount());
         System.out.println(zoo.getAnimalsCountSorted());
+
     }
 }

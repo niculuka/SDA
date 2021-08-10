@@ -13,7 +13,7 @@ package com.advancedCoding.ex22;
 public class Main {
     public static void main(String[] args) {
         Shape3D cube = new Cube(3);
-        System.out.println(cube.calculateVolume());
+        System.out.println("Volume = " + cube.calculateVolume());
         cube.fill(26);
         cube.fill(27);
         cube.fill(28);
