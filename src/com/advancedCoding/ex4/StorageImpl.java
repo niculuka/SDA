@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class StorageImpl implements Storage{
+public class StorageImpl implements Storage {
     private Map<String, List<String>> map;
 
     public StorageImpl(Map<String, List<String>> map) {
@@ -37,18 +37,19 @@ public class StorageImpl implements Storage{
 
     @Override
     public void findValues(String value) {
+//  -FOREACH---------------------------------------------------------------------------
 //        map.entrySet().forEach(entry -> {
 //            if (entry.getValue().contains(value)) {
 //                System.out.println("Key: " + entry.getKey());
 //            }
 //        });
-// ----------------------------------------------------------------------------
+//  -FOR---------------------------------------------------------------------------
         for (Map.Entry<String, List<String>> entry : map.entrySet()) {
             if (entry.getValue().contains(value)) {
                 System.out.println("Key: " + entry.getKey());
             }
         }
-// ----------------------------------------------------------------------------
+//  -LAMBDA------------------------------------------------------------------------
         List<String> keys = map.entrySet().stream()
                 .map(entry -> {
                     if (entry.getValue().contains(value)) {
@@ -58,6 +59,13 @@ public class StorageImpl implements Storage{
                 })
                 .filter(key -> key != null)
                 .collect(Collectors.toList());
-        System.out.println("Keys found for value" + value + ": " + keys);
+        System.out.println("Keys found for value " + value + ": " + keys);
+    }
+
+    @Override
+    public String toString() {
+        return "StorageImpl{" +
+                "map=" + map +
+                '}';
     }
 }

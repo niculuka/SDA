@@ -1,9 +1,9 @@
-package com.advancedCoding.ex5;
+package com.advancedCoding_Homework.implementMethods_E_;
+
 import java.util.HashMap;
 import java.util.Map;
 
-
-public class SDAHashSetImpl<E> implements SDAHashSet<E> {
+public class CCCHashSetImpl<E> implements CCCHashSet<E>{
     private final Map<E, Object> map = new HashMap<>();
 
     @Override
@@ -23,6 +23,12 @@ public class SDAHashSetImpl<E> implements SDAHashSet<E> {
 
     @Override
     public boolean contains(E element) {
+        if (map.containsKey(element)) {
+            System.out.println("Element: " + element);
+        } else {
+            System.out.println("Element: " + element + " - DOEST NOT EXIST!");
+        }
+
         return map.containsKey(element);
     }
 
@@ -33,7 +39,7 @@ public class SDAHashSetImpl<E> implements SDAHashSet<E> {
 
     @Override
     public String toString() {
-        return "SDAHashSetImpl{" +
+        return "CCCHashSetImpl{" +
                 "map=" + map +
                 '}';
     }

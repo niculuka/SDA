@@ -16,16 +16,21 @@ public class Main {
         zooStorage.addToStorage("bear", "Grizzly");
         zooStorage.addToStorage("bear", "Brown");
         zooStorage.addToStorage("bear", "Panda");
-
         zooStorage.addToStorage("cat", "meau");
         zooStorage.addToStorage("cat", "pissi");
         zooStorage.addToStorage("cat", "Teddy");
+        System.out.println(zooStorage);
+        System.out.println("-----------------------------------");
 
         zooStorage.printValues("cat");
         zooStorage.printValues("bear");
         zooStorage.printValues("aaa");
+        System.out.println("-----------------------------------");
 
         zooStorage.findValues("Teddy");
-        zooStorage.findValues("Ted");
+        System.out.println("-----------------------------------");
+
+        zooStorage.findValues("Te");
+        System.out.println("-----------------------------------");
     }
 }
