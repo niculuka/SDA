@@ -16,8 +16,7 @@ import java.util.HashSet;
  * 9. returning a list of all cars sorted according to the passed parameter: ascending / descending,
  * 10. checking if a specific car is on the list,
  * 11. returning a list of cars manufactured by a specific manufacturer,
- * 12. returning the list of cars manufactured by the manufacturer with the year of establishment <,>, <=,> =,
- * =,! = from the given.
+ * 12. returning the list of cars manufactured by the manufacturer with the year of establishment <,>, <=,>=,=,!= from the given.
  */
 
 public class Main {
