@@ -1,6 +1,5 @@
 package com.advancedCoding.ex36;
 
-import com.advancedCoding.ex35.MyRunnable;
 
 public class ThreadPlaygroundRunnable implements Runnable{
     private String name;

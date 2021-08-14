@@ -12,12 +12,16 @@ import com.advancedCoding.ex19.Laptop;
 public class Main {
     public static void main(String[] args) {
         Joiner<String> joiner = new Joiner<>("-");
-        System.out.println(joiner.join("a", "b", "c"));
+        System.out.println(joiner.join("a", "b", "c", "d", "e", "f"));
+        System.out.println("=====================================================================");
 
-        Joiner<Computer> computerJoiner = new Joiner<>("***");
-        Computer laptop1 = new Laptop("3400", "64", "1800", "AMD", "DATASET", "5A");
-        Computer laptop2 = new Laptop("3240", "6", "1810", "AMFDD", "DATADSDDSET", "510A");
-        System.out.println(computerJoiner.join(laptop1, laptop2));
+
+        Joiner<Computer_copy> computerJoiner = new Joiner<>("*****");
+        Computer_copy laptop_copy1 = new Laptop_copy("3400", "64", "1800", "AMD", "DATASET", "5A");
+        Computer_copy laptop_copy2 = new Laptop_copy("3240", "6", "1810", "AMFDD", "DATADSDDSET", "510A");
+        System.out.println(computerJoiner.join(laptop_copy1, laptop_copy2));
+
+
 
     }
 }
